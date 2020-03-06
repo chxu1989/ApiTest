@@ -3,16 +3,16 @@
 import unittest
 import HTMLTestRunner
 from sendfunc import RunMain
+import utils
+import os
 
 class TestRun(unittest.TestCase):
     def setUp(self):
       self.rm = RunMain()
 
-    def test_01(self):
-        url = 'https://gov-admin-test.zcloud.ac.cn/#/login'
-        res = self.rm.run('get',url)
-        print(res)
-        self.(res.['status_code'], 200, "测试通过")
+    def test_run_single_testcase(self):
+      testcase_filepath = os.
+      pass
 
 
 if __name__ =='__main__':
